@@ -1,0 +1,58 @@
+:root {
+}
+
+thead th {
+  background: #f8fafc;
+  border-top: 0;
+  font-weight: 700;
+  color: #475569;
+}
+
+.muted-cell {
+  color: #94a3b8;
+}
+
+.negative-cell {
+  color: var(--danger);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pill-red {
+  background: var(--danger-soft);
+  color: #b91c1c;
+}
+
+.pill-neutral {
+  background: var(--neutral-soft);
+  color: #334155;
+}
+
+@media (max-width: 1100px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .page-shell {
+    padding: 16px;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .two-col-grid,
+  .button-grid {
+    grid-template-columns: 1fr;
+  }
+}
